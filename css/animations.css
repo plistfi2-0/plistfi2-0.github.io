@@ -1,0 +1,217 @@
+/*ANIMATIONS*/
+
+.animate {}
+
+.animate-elem {
+    transition: all 1s ease;
+    /*transition-duration: 1s;*/
+}
+
+.animate-delay-03 {
+    transition: all 1s .3s ease;
+}
+
+.animate-delay-05 {
+    transition: all 1s .5s ease;
+}
+
+.animate-delay-07 {
+    transition: all 1s .7s ease;
+}
+
+.animate-delay-10 {
+    transition: all 1s 1s ease;
+}
+
+.animate-delay-12 {
+    transition: all 1s 1.2s ease;
+}
+
+.animate-delay-15 {
+    transition: all 1s 1.5s ease;
+}
+
+.animate-delay-17 {
+    transition: all 1s 1.7s ease;
+}
+
+.animate-delay-20 {
+    transition: all 1s 2s ease;
+}
+
+.animate-delay-22 {
+    transition: all 1s 2.2s ease;
+}
+
+.animate-delay-25 {
+    transition: all 1s 2.5s ease;
+}
+
+.animate-delay-30 {
+    transition: all 1s 3s ease;
+}
+
+.animate-delay-35 {
+    transition: all 1s 3.5s ease;
+}
+
+.animate-delay-40 {
+    transition: all 1s 4s ease;
+}
+
+.animate-delay-45 {
+    transition: all 1s 4.5s ease;
+}
+
+.animate-delay-50 {
+    transition: all 1s 5s ease;
+}
+
+.animate-delay-55 {
+    transition: all 1s 5.5s ease;
+}
+
+.animate-delay-60 {
+    transition: all 1s 6s ease;
+}
+
+.animate-delay-65 {
+    transition: all 1s 6.5s ease;
+}
+
+.animate-delay-70 {
+    transition: all 1s 7s ease;
+}
+
+.animate-duration-05 {
+    transition-duration: .5s;
+}
+
+.animate-duration-10 {
+    transition-duration: 1s;
+}
+
+.animate-duration-15 {
+    transition-duration: 1.5s;
+}
+
+.animate-duration-20 {
+    transition-duration: 2s;
+}
+
+.animate-duration-30 {
+    transition-duration: 3s;
+}
+
+.animate-duration-40 {
+    transition-duration: 4s;
+}
+
+.animate-duration-50 {
+    transition-duration: 5s;
+}
+
+.animate-duration-60 {
+    transition-duration: 6s;
+}
+
+.animate-duration-70 {
+    transition-duration: 7s;
+}
+
+.animate-duration-80 {
+    transition-duration: 8s;
+}
+
+.animate-duration-90 {
+    transition-duration: 9s;
+}
+
+.animate-duration-100 {
+    transition-duration: 10s;
+}
+
+.animate-fadeIn {
+    opacity: 0;
+}
+
+.animate.active .animate-fadeIn {
+    opacity: 1;
+}
+
+.animate .animate-scale-from-small {
+    transform: scale(0);
+}
+
+.animate.active .animate-scale-from-small {
+    transform: scale(1);
+}
+
+.animate .animate-scale-from-big {
+    transform: scale(2);
+}
+
+.animate.active .animate-scale-from-big {
+    transform: scale(1);
+}
+
+.animate .animate-slideFromTop {
+    top: -200px;
+}
+
+.animate.active .animate-slideFromTop {
+    top: 0;
+}
+
+.animate-slideFromBottom {
+    top: 50px;
+}
+
+.animate.active .animate-slideFromBottom {
+    top: 0;
+}
+
+.animate .animate-slideFromLeft {
+    left: -200px;
+}
+
+.animate.active .animate-slideFromLeft {
+    left: 0;
+}
+
+.animate .animate-slideFromRight {
+    right: -700px;
+}
+
+.animate.active .animate-slideFromRight {
+    right: 0;
+}
+
+@media (max-width:980px) {
+    /*disable animations for small displays*/
+    .animate-elem {
+        transition: all;
+        transition-duration: 0s;
+    }
+    .animate .animate-fadeIn {
+        opacity: 1;
+    }
+    .animate .animate-slideFromTop {
+        top: 0;
+    }
+    .animate .animate-slideFromBottom {
+        top: 0;
+    }
+    .animate .animate-slideFromLeft {
+        left: 0;
+    }
+    .animate .animate-slideFromRight {
+        right: 0;
+    }
+    .animate .animate-scale-from-small {
+        transform: scale(1);
+    }
+    .animate .animate-scale-from-big {
+        transform: scale(1);
+    }
+}
